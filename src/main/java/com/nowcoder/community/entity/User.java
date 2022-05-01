@@ -2,9 +2,7 @@ package com.nowcoder.community.entity;
 
 import java.util.Date;
 
-/**
- *  create：lgf
- */
+
 public class User {
     private int id;
     private String username;
