@@ -33,7 +33,7 @@
         </if>
     </select>
 
-    <insert id="insertDiscussPost" parameterType="com.nowcoder.community.entity.DiscussPost">
+    <insert id="insertDiscussPost" parameterType="com.nowcoder.community.entity.DiscussPost" keyProperty="id">
         insert into discuss_post(<include refid="insertFields"></include>)
         values (#{userId},#{title},#{content},#{type},#{status},#{createTime},#{commentCount},#{score})
     </insert>
@@ -49,6 +49,10 @@
         update discuss_post
         set comment_count = #{commentCount}
         where id = #{id}
+    </update>
+
+    <update id="updateStatus">
+        update discuss_post set status = #{status} where id = #{id}
     </update>
 
 </mapper>
