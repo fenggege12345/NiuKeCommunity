@@ -85,6 +85,7 @@
 			<scope>test</scope>
 		</dependency>
 
+
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
@@ -114,7 +115,11 @@
 			<artifactId>spring-boot-starter-aop</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+		<dependency>
+		<groupId>io.github.yedaxia</groupId>
+		<artifactId>japidocs</artifactId>
+		<version>1.4.3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
